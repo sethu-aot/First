@@ -90,6 +90,7 @@ p {
     gap: 250px;
     margin-left: 60px;
     margin-right: 60px;
+    flex-wrap: wrap;
 }
 
 .home-left {
@@ -105,6 +106,10 @@ p {
 .home-left p {
     color: #475467;
 
+}
+
+.home-img {
+    max-width: 400px;
 }
 
 .home-left-button button{
@@ -158,12 +163,14 @@ p {
 .bottom-right {
     margin-left: 30px;
     margin-right: 30px;
+    /* flex-wrap: wrap; */
 }
 
 .bottom-section {
     display: flex;
     flex-direction: row;
     column-gap: 10px;
+    /* flex-wrap: wrap; */
 }
 
 .bottom-cards {
@@ -219,20 +226,24 @@ p {
 
 }
 
+
+
 .feature-bottom-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 32px;
-    row-gap: 32px;
-    width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
     margin: auto;
-    
+    justify-content: center;
+    gap: 20px;
 }
 
 .feature-card {
+    /* margin: auto; */
     background-color: white;
     padding: 32px;
     border-radius: 20px;
+    max-width: calc(25%);
+    flex-grow: 1;
 }
 
 .feature-card-p1 {
@@ -260,11 +271,13 @@ p {
     justify-content: center;
     gap: 48px;
     padding: 96px 32px;
+    flex-wrap: wrap;
 
 }
 
 .sales-section-left {
-    padding: 126px;
+    /* padding: 126px; */
+    max-width: 50%;
 }
 
 .sales-section-p1 {
@@ -274,6 +287,10 @@ p {
 .sales-section-p2 span {
     color: #15B79E;
 
+}
+
+.sales-section-right {
+    max-width: 50%;
 }
 
 /*PRICING*/
@@ -342,6 +359,7 @@ p {
 
 /*FOOTER*/
 .footer {
+    
     border-top: solid 1px #D0D5DD;
     display: flex;
     flex-direction: column;
@@ -351,11 +369,22 @@ p {
 .footer-icon {
     display: flex;
     align-items: center;
-    /* background: red; */
-    gap: 10px;
     margin-bottom: auto;
 }
 
+.footer-left{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0px;
+    margin-bottom: auto;
+}
+
+.footer-icon p {
+    font-size: 36px;
+    margin: 0 0;
+    font-weight: 600;
+}
 
 
 .footer-top {
@@ -363,21 +392,22 @@ p {
     display: flex;
     gap: 162px;
     padding-top: 50px;
+    flex-wrap: wrap;
 }
 
 .footer-bottom {
     display: flex;
     justify-content: space-between;
-    width: 1216px;
-    margin: auto;
+    max-width: 1280px;
+    /* margin: auto; */
     padding: 64px 64px;
 }
 
 
 .footer-icons {
-    justify-content: space-between;
-    gap: 8px;
-
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .ft-icon {
@@ -385,11 +415,6 @@ p {
     border-radius: 4px;
     padding: 7px 7px;
     
-}
-
-.footer-icon p {
-    font-size: 36px;
-    font-weight: 600;
 }
 
 .footer-columns span {
