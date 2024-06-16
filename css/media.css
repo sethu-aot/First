@@ -1,0 +1,204 @@
+@media (max-width: 768px) {
+
+    /*Header*/
+
+    .right-side{
+        display: none;
+    }
+
+    .main-right-section button {
+        display: none;
+    }
+
+
+    /*Home*/
+    .home-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-left-button button {
+        padding: 16px 24x;
+        width: 100%;
+        justify-content: center;
+        align-self: center;
+        /* width: 680px; */
+    }
+
+
+    .main-right-section img {
+        display: block;
+        
+    }
+
+    .bottom-section {
+        flex-wrap: wrap;
+    }
+
+    .bottom-cards {
+        margin-bottom: 30px;
+    }
+
+    .features-top-p3 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #FFFFFF;
+
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        gap: 0px;
+        justify-content: center;
+        margin-bottom: 130px;
+    }
+
+    .sales-section {
+        flex-direction: column-reverse;
+    }
+
+    .sales-section-right {
+        justify-content: center;
+        /* margin: auto; */
+    }
+
+    .pricing-section-box {
+        padding: 64px 32px;
+    }
+
+
+    .home-left {
+        /* width: 680px; */
+        /* padding-left: 20px; */
+        text-align: center;
+        /* justify-content: center; */
+    }
+
+    .home-left p {
+        font-size: 20px;
+    }
+
+    .features {
+        padding: 64px 32px;
+    }
+
+    .feature-bottom-cards {
+        display: flex;
+        flex-wrap: wrap;
+        /* max-width: 400px; */
+        margin: auto;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .feature-card {
+        margin: auto;
+        background-color: white;
+        padding: 32px 24px;
+        border-radius: 20px;
+        max-width: 290px;
+        /* flex-grow: 1; */
+    }
+
+    .footer {
+        display: none;
+    }
+
+    /* Small Footer */
+    footer {
+        display: block;
+        margin-bottom: 90px;
+    }
+
+    .small-footer-bottom {
+        display: flex;
+        margin: 50px 0;
+        /* flex-direction: column; */
+    }
+
+
+
+}
+
+/*----------------\
+|Mobile divices   |
+\----------------*/
+
+
+@media (max-width: 376px) {
+
+    .home-img img {
+        max-width: 343px;
+    }
+
+    .home-left {
+        max-width: 343px;
+    }
+
+    .home-left h1 {
+        font-size: 26px;
+    }
+
+    .home-left p {
+        font-size: 15px;
+    }
+
+    .home-left img {
+        width: 100%;
+    }
+    
+    .bottom-left img {
+        max-width: 343px;
+    }
+
+    .sales-section-right img {
+        max-width: 343px;
+        /* padding: auto; */
+    }
+
+    html {
+        display: flex;
+        /* background-color: blue; */
+    }
+
+    .bottom-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:48px ;
+    }
+
+    .pricing-section-box {
+        text-align: center;
+    }
+
+    .pricing-section-p1 {
+        font-size: 38px;
+    }
+
+    .pricing-section-P2 {
+        font-size: 24px;
+    }
+
+    .pricing-section-box button{
+        padding: 15px 80px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    /* Small Footer */
+    footer {
+        display: block;
+        margin-bottom: 90px;
+    }
+
+    .small-footer-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    
+}
