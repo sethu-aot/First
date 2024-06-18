@@ -1,8 +1,6 @@
 @media (max-width: 768px) {
 
-    /*Header*/
-
-    .right-side{
+    .right-side {
         display: none;
     }
 
@@ -10,26 +8,57 @@
         display: none;
     }
 
+    .hamburger-button {
+        display: block;
+    }
+
+    #menu-toggle:checked + .hamburger-label + .hamburger-contents {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: start;
+        justify-content: center;
+    }
+
+    #menu-toggle:checked + .hamburger-label .hamburger-button {
+        display: none;
+    }
+
+    #menu-toggle:checked + .hamburger-label .hamburger-x {
+        display: block;
+    }
+
+
+    
 
     /*Home*/
+
     .home-img {
         display: flex;
         justify-content: center;
     }
 
-    .home-left-button button {
+    /* .home-left-button button {
         padding: 16px 24x;
         width: 100%;
         justify-content: center;
         align-self: center;
+        /* width: 680px; 
+    } */
+
+    .home-left-button {
+        display: flex;
+        padding: 16px 24x;
+        min-width: 100%;
+        justify-content: center;
+        align-items: center;
         /* width: 680px; */
     }
 
-
-    .main-right-section img {
-        display: block;
-        
+    .home-left-button button{
+        min-width: 100%;
     }
+
 
     .bottom-section {
         flex-wrap: wrap;
@@ -47,7 +76,7 @@
 
     }
 
-    .home{
+    .home {
         flex-direction: column-reverse;
         gap: 0px;
         justify-content: center;
@@ -84,20 +113,27 @@
     }
 
     .feature-bottom-cards {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* flex-wrap: wrap; */
         /* max-width: 400px; */
+        max-width: 680px;
         margin: auto;
         justify-content: center;
-        gap: 20px;
+        gap: 32px;
+
     }
-    
+
+    /* .features-bottom {
+        padding: 64px 16px;
+    } */
+
     .feature-card {
         margin: auto;
         background-color: white;
         padding: 32px 24px;
         border-radius: 20px;
-        max-width: 290px;
+        /* max-width: 680px; */
         /* flex-grow: 1; */
     }
 
@@ -126,14 +162,15 @@
 \----------------*/
 
 
-@media (max-width: 376px) {
+@media (max-width: 480px) {
+    
 
     .home-img img {
         max-width: 343px;
     }
 
     .home-left {
-        max-width: 343px;
+        max-width: 100%;
     }
 
     .home-left h1 {
@@ -141,15 +178,43 @@
     }
 
     .home-left p {
-        font-size: 15px;
+        font-size: 18px;
+        font-weight: 400;
     }
 
     .home-left img {
         width: 100%;
     }
-    
+
+    .bottom-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
     .bottom-left img {
         max-width: 343px;
+    }
+
+    .bottom-right {
+        margin-right: 0;
+        min-width: 100%;
+        padding: 0;
+    }
+
+    .about {
+        width: 375px;
+        padding: 64px 16px 64px 16px;
+        gap: 48px;
+
+    }
+
+    .sales-section {
+        max-width: 375px;
+
+        padding: 64px 16px 64px 16px;
+        gap: 48px;
+
     }
 
     .sales-section-right img {
@@ -162,11 +227,18 @@
         /* background-color: blue; */
     }
 
-    .bottom-cards {
+    .feature-bottom-cards {
         display: grid;
         grid-template-columns: 1fr;
-        gap:48px ;
+        gap: 48px;
     }
+
+    /* .pricing-section {
+        max-width: 375px;
+        padding: 32px 16px 32px 16px;
+        gap: 10px;
+
+    } */
 
     .pricing-section-box {
         text-align: center;
@@ -180,7 +252,7 @@
         font-size: 24px;
     }
 
-    .pricing-section-box button{
+    .pricing-section-box button {
         padding: 15px 80px;
     }
 
@@ -189,16 +261,30 @@
     }
 
     /* Small Footer */
-    footer {
-        display: block;
-        margin-bottom: 90px;
-    }
 
-    .small-footer-bottom {
-        display: flex;
-        flex-direction: column;
-    }
 
-    
-    
+    /* Responsive Design for Mobile Devices */
+    @media (max-width: 376px) {
+        /* Other styles */
+
+        .footer {
+            display: none;
+        }
+
+        /* Small Footer */
+        footer {
+            display: block;
+            margin-bottom: 90px;
+        }
+
+        .small-footer-bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: start;
+
+        }
+
+
+    }
 }
