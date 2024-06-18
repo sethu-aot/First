@@ -14,28 +14,38 @@
   </head>
 
   <body>
-    <!--Header-->
+    <!-- Header -->
     <header>
       <div class="main-header">
-        <div class="main-left-section">
-          <div class="left-side">
-            <img class="icon" src="images/icon.png" alt="icon" />
-            <p>Sales Layer</p>
+          <div class="main-left-section">
+              <div class="left-side">
+                  <img class="icon" src="images/icon.png" alt="Sales Layer icon" />
+                  <p>Sales Layer</p>
+              </div>
+              <nav class="right-side">
+                  <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="#">Why Sales Layer</a>
+                  <a href="#">Pricing</a>
+              </nav>
           </div>
-          <div class="right-side">
-            <p>Home</p>
-            <p>About</p>
-            <p>Why Sales Layer</p>
-            <p>Pricing</p>
+          <div class="main-right-section">
+              <input type="checkbox" id="menu-toggle" class="menu-toggle">
+              <label for="menu-toggle" class="hamburger-label">
+                  <img class="hamburger-button" src="images/hamburger.png" alt="Menu">
+                  <img class="hamburger-x" src="images/x.png" alt="Close menu">
+              </label>
+              <div class="hamburger-contents">
+                  <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="#">Why Sales Layer</a>
+                  <a href="#">Pricing</a>
+              </div>
+              <button class="login-button">Log in</button>
+              <button class="signup-button">Sign Up</button>
           </div>
-        </div>
-        <div class="main-right-section">
-          <img src="images/hamburger.png" alt="hamburger">
-          <button class="login-button">Log in</button>
-          <button class="signup-button">Sign Up</button>
-        </div>
       </div>
-    </header>
+  </header>
 
     <main>
       <!--Home-->
@@ -250,55 +260,76 @@
         </div>
       </div>
 
-
+      <!--Small footer-->
       <footer>
         <div class="small-footer-top">
-          <div class="small-footer-top-contents">
-            <img src="images/icon.png" alt="footer icon" />
-            <p>Sales Layer</p>
-
-          </div>
-          
-
+            <div class="small-footer-top-contents">
+                <img src="images/icon.png" alt="footer icon" />
+                <p>Sales Layer</p>
+            </div>
         </div>
         <div class="small-footer-middle">
-          <div class="footer-dropdown-1">
-            <p>
-              Company
-            </p>
-            <img src="images/expand_more.png" alt="">
-          </div>
-          <div class="footer-dropdown-2">
-            <p>
-              Sales Layer
-            </p>
-            <img src="images/expand_more.png" alt="">
-          </div>
-          <div class="footer-dropdown-3">
-            <p>
-              Resources
-            </p>
-            <img src="images/expand_more.png" alt="">
-          </div>
-          <div class="footer-dropdown-4">
-            <p>
-              Support
-            </p>
-            <img src="images/expand_more.png" alt="">
-          </div>
-
+            <div class="footer-dropdown">
+                <input type="radio" id="company" name="accordion" class="accordion-radio">
+                <label for="company">
+                    <p>Company</p>
+                    <img src="images/expand_more.png" alt="expand">
+                </label>
+                <ul class="footer-dropdown-content">
+                    <li>Meet Us</li>
+                    <li>Jobs</li>
+                    <li>Blog</li>
+                    <li>Talk to us</li>
+                </ul>
+            </div>
+            <div class="footer-dropdown">
+                <input type="radio" id="sales-layer" name="accordion" class="accordion-radio">
+                <label for="sales-layer">
+                    <p>Sales Layer</p>
+                    <img src="images/expand_more.png" alt="expand">
+                </label>
+                <ul class="footer-dropdown-content">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </div>
+            <div class="footer-dropdown">
+                <input type="radio" id="resources" name="accordion" class="accordion-radio">
+                <label for="resources">
+                    <p>Resources</p>
+                    <img src="images/expand_more.png" alt="expand">
+                </label>
+                <ul class="footer-dropdown-content">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </div>
+            <div class="footer-dropdown">
+                <input type="radio" id="support" name="accordion" class="accordion-radio">
+                <label for="support">
+                    <p>Support</p>
+                    <img src="images/expand_more.png" alt="expand">
+                </label>
+                <ul class="footer-dropdown-content">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </div>
         </div>
         <div class="small-footer-bottom">
-          <p>© 2024 Sales Layer Rights Reserved.</p>
-          <div class="small-footer-icons">
-            <img class="ft-icon" src="images/facebook.png" alt="facebook" />
-            <img class="ft-icon" src="images/twitter.png" alt="twitter" />
-            <img class="ft-icon" src="images/linkedin.png" alt="linkedin" />
-            <img class="ft-icon" src="images/instagram.png" alt="instagram" />
-          </div>
-
+            <p>© 2024 Sales Layer Rights Reserved.</p>
+            <div class="small-footer-icons">
+                <img class="ft-icon" src="images/facebook.png" alt="facebook" />
+                <img class="ft-icon" src="images/twitter.png" alt="twitter" />
+                <img class="ft-icon" src="images/linkedin.png" alt="linkedin" />
+                <img class="ft-icon" src="images/instagram.png" alt="instagram" />
+            </div>
         </div>
-      </footer>
+    </footer>
+      
       
 
     </main>
